@@ -1,6 +1,5 @@
 const HeroSection = () => {
-  return (
-    <div className="min-h-[90vh] flex items-center justify-center px-6">
+  return <div className="min-h-[90vh] flex items-center justify-center px-6">
       <div className="max-w-3xl text-center space-y-6">
         <h1 className="text-4xl md:text-5xl font-serif tracking-wide">
           Boutique booking & management<br />for emerging bands
@@ -10,17 +9,13 @@ const HeroSection = () => {
           Local · Human · Artist-first
         </p>
 
-        <p className="text-lg opacity-90">
-          Coopers Booking is an independent booking & management partner
-          working closely with emerging bands to build meaningful live momentum —
-          show by show, scene by scene.
-        </p>
+        <p className="text-lg opacity-90">Coopers Booking is an independent booking & management partner working closely with emerging bands to build meaningful live momentum. 
+
+
+Show by show, scene by scene, we curate the best concert venues, create tailored tour management strategies, and help you progress in your current situation and ambitions. </p>
 
         <div className="pt-6">
-          <a
-            href="mailto:booking.coopers@gmail.com"
-            className="inline-block border border-current px-6 py-3 tracking-wide hover:opacity-80 transition"
-          >
+          <a href="mailto:booking.coopers@gmail.com" className="inline-block border border-current px-6 py-3 tracking-wide hover:opacity-80 transition">
             Booking inquiries
           </a>
 
@@ -29,8 +24,6 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;
