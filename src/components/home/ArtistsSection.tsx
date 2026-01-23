@@ -15,7 +15,7 @@ const ArtistsSection = () => {
               {/* Artist Image */}
               <div className="order-2 lg:order-1">
                 <div className="aspect-square overflow-hidden rounded bg-card">
-                  <img alt="Breaking Out" className="w-full h-full object-contain" src="/lovable-uploads/3f3117d8-897b-4f4d-bf99-c785e2e868ec.jpg" />
+                  <img alt="Breaking Out" className="w-full h-full object-contain" src="/lovable-uploads/de3e4f7b-5b39-40ea-b8fd-b1f12d426332.jpg" />
                 </div>
               </div>
 
