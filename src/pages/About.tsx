@@ -26,9 +26,9 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <main className="pt-24 md:pt-32">
+      <main className="pt-32 md:pt-40">
         {/* Hero */}
-        <section className="section-padding">
+        <section className="section-padding pt-8 md:pt-12">
           <div className="section-container">
             <motion.div
               initial={{ opacity: 0, y: 30 }}

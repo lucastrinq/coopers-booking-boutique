@@ -1,16 +1,34 @@
 import { motion } from "framer-motion";
+import logoFull from "@/assets/logo-full.png";
+import logoIcon from "@/assets/logo-icon.png";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative">
-      <div className="section-container text-center">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroBg} 
+          alt="" 
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/60" />
+      </div>
+
+      <div className="section-container text-center relative z-10">
+        {/* Logo Icon - subtle above headline */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="mb-8"
         >
-          <span className="label-uppercase">Coopers Booking</span>
+          <img 
+            src={logoIcon} 
+            alt="CB" 
+            className="h-16 md:h-20 mx-auto opacity-80"
+          />
         </motion.div>
 
         <motion.h1
@@ -56,6 +74,20 @@ const HeroSection = () => {
           >
             coopers.booking@gmail.com
           </a>
+        </motion.div>
+
+        {/* Full Logo at bottom */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-16"
+        >
+          <img 
+            src={logoFull} 
+            alt="Coopers Booking" 
+            className="h-10 md:h-12 mx-auto opacity-60"
+          />
         </motion.div>
       </div>
 
