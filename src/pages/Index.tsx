@@ -9,19 +9,43 @@ import ContactSection from "@/components/home/ContactSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      <main>
-        <HeroSection />
-        <WhatWeDoSection />
-        <ApproachSection />
-        <ArtistsSection />
-        <AboutSection />
-        <ContactSection />
+    <div className="min-h-screen bg-background text-foreground">
+      <header>
+        <Navigation />
+      </header>
+
+      <main id="main-content" className="relative">
+        <section id="hero">
+          <HeroSection />
+        </section>
+
+        <section id="what-we-do">
+          <WhatWeDoSection />
+        </section>
+
+        <section id="approach">
+          <ApproachSection />
+        </section>
+
+        <section id="artists">
+          <ArtistsSection />
+        </section>
+
+        <section id="about">
+          <AboutSection />
+        </section>
+
+        <section id="contact">
+          <ContactSection />
+        </section>
       </main>
-      <Footer />
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
 
 export default Index;
+
