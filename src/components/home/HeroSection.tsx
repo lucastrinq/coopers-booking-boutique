@@ -9,7 +9,7 @@ const HeroSection = () => {
           Local · Human · Artist-first
         </p>
 
-        <p className="text-lg opacity-90">Coopers Booking is an independent booking & management partner working closely with emerging bands to build meaningful live momentum. 
+        <p className="text-lg opacity-90 py-[10px]">Coopers Booking is an independent booking & management partner working closely with emerging bands to build meaningful live momentum.  
 
 
 Show by show, scene by scene, we curate the best concert venues, create tailored tour management strategies, and help you progress in your current situation and ambitions. </p>
