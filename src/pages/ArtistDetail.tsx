@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
+import artistImage from "@/assets/artist-breaking-out.jpg";
 
 const artistsData: Record<string, {
   name: string;
@@ -11,6 +12,7 @@ const artistsData: Record<string, {
   bio: string;
   longBio: string;
   spotifyEmbed: string;
+  image: string;
 }> = {
   "breaking-out": {
     name: "Breaking Out",
@@ -22,6 +24,7 @@ The band's live shows have quickly earned them a reputation for intensity and au
 
 Currently working on new material, the band continues to evolve while staying true to the artistic vision that makes them stand out in an increasingly homogenized musical landscape.`,
     spotifyEmbed: "https://open.spotify.com/embed/artist/0TnOYISbd1XYRBk9myaseg?utm_source=generator&theme=0",
+    image: artistImage,
   },
 };
 
@@ -33,8 +36,8 @@ const ArtistDetail = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navigation />
-        <main className="pt-24 md:pt-32">
-          <section className="section-padding">
+        <main className="pt-32 md:pt-40">
+          <section className="section-padding pt-8 md:pt-12">
             <div className="section-container text-center">
               <h1 className="headline-lg text-foreground mb-8">Artist not found</h1>
               <Link to="/artists" className="btn-outline">
@@ -51,9 +54,9 @@ const ArtistDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <main className="pt-24 md:pt-32">
+      <main className="pt-32 md:pt-40">
         {/* Back Link */}
-        <section className="section-container">
+        <section className="section-container pt-4">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -69,21 +72,36 @@ const ArtistDetail = () => {
           </motion.div>
         </section>
 
-        {/* Hero */}
+        {/* Hero with Image */}
         <section className="section-container pb-16 md:pb-24">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <p className="label-uppercase mb-4">{artist.genre}</p>
-            <h1 className="headline-xl text-foreground mb-6">
-              {artist.name}
-            </h1>
-            <p className="font-serif text-xl md:text-2xl text-primary max-w-2xl">
-              {artist.bio}
-            </p>
-          </motion.div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <p className="label-uppercase mb-4">{artist.genre}</p>
+              <h1 className="headline-xl text-foreground mb-6">
+                {artist.name}
+              </h1>
+              <p className="font-serif text-xl md:text-2xl text-primary max-w-2xl">
+                {artist.bio}
+              </p>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="aspect-square rounded overflow-hidden"
+            >
+              <img 
+                src={artist.image} 
+                alt={artist.name}
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
         </section>
 
         {/* Content Grid */}

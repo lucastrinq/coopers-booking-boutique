@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
+import artistImage from "@/assets/artist-breaking-out.jpg";
 
 const artists = [
   {
@@ -10,6 +11,7 @@ const artists = [
     name: "Breaking Out",
     description: "Raw energy meets introspective songwriting. A band on the verge of something significant.",
     genre: "Alternative Rock",
+    image: artistImage,
   },
 ];
 
@@ -17,8 +19,8 @@ const Artists = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <main className="pt-24 md:pt-32">
-        <section className="section-padding">
+      <main className="pt-32 md:pt-40">
+        <section className="section-padding pt-8 md:pt-12">
           <div className="section-container">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -42,20 +44,32 @@ const Artists = () => {
                     to={`/artists/${artist.id}`}
                     className="block card-subtle group transition-all duration-500 hover:border-primary/50"
                   >
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                      <div>
+                    <div className="flex flex-col md:flex-row gap-8">
+                      {/* Artist Image */}
+                      <div className="w-full md:w-64 lg:w-80 flex-shrink-0">
+                        <div className="aspect-square overflow-hidden rounded bg-card">
+                          <img 
+                            src={artist.image} 
+                            alt={artist.name}
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          />
+                        </div>
+                      </div>
+                      
+                      {/* Artist Info */}
+                      <div className="flex flex-col justify-center flex-1">
                         <p className="label-uppercase mb-2">{artist.genre}</p>
-                        <h2 className="headline-md text-foreground group-hover:text-primary transition-colors duration-300 mb-2">
+                        <h2 className="headline-md text-foreground group-hover:text-primary transition-colors duration-300 mb-3">
                           {artist.name}
                         </h2>
-                        <p className="body-md max-w-xl">
+                        <p className="body-md max-w-xl mb-6">
                           {artist.description}
                         </p>
-                      </div>
-                      <div className="flex-shrink-0">
-                        <span className="btn-outline text-xs py-3 px-6 group-hover:border-primary group-hover:text-primary transition-colors">
-                          View Artist
-                        </span>
+                        <div>
+                          <span className="btn-outline text-xs py-3 px-6 group-hover:border-primary group-hover:text-primary transition-colors">
+                            View Artist
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </Link>

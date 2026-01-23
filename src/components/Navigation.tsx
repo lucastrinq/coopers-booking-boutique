@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logoIcon from "@/assets/logo-icon.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,8 +39,9 @@ const Navigation = () => {
       >
         <nav className="section-container">
           <div className="flex items-center justify-between h-20 md:h-24">
-            <Link to="/" className="group">
-              <span className="font-serif text-xl md:text-2xl tracking-wide text-foreground transition-colors duration-300 group-hover:text-primary">
+            <Link to="/" className="group flex items-center gap-3">
+              <img src={logoIcon} alt="CB" className="h-8 md:h-10" />
+              <span className="font-serif text-lg md:text-xl tracking-wide text-foreground transition-colors duration-300 group-hover:text-primary">
                 Coopers Booking
               </span>
             </Link>

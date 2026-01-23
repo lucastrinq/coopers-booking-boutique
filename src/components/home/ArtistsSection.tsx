@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import AnimatedSection from "../AnimatedSection";
+import artistImage from "@/assets/artist-breaking-out.jpg";
 
 const ArtistsSection = () => {
   return (
@@ -13,10 +14,21 @@ const ArtistsSection = () => {
         </AnimatedSection>
 
         <AnimatedSection delay={0.2}>
-          <div className="card-subtle max-w-4xl">
+          <div className="card-subtle max-w-5xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              {/* Artist Image */}
+              <div className="order-2 lg:order-1">
+                <div className="aspect-square overflow-hidden rounded bg-card">
+                  <img 
+                    src={artistImage} 
+                    alt="Breaking Out"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
               {/* Artist Info */}
-              <div>
+              <div className="order-1 lg:order-2 flex flex-col justify-center">
                 <div className="divider-line-accent mb-6" />
                 <h3 className="headline-md text-foreground mb-4">
                   Breaking Out
@@ -35,23 +47,17 @@ const ArtistsSection = () => {
                     coopers.booking@gmail.com
                   </a>
                 </div>
-                <Link
-                  to="/artists/breaking-out"
-                  className="btn-outline text-xs py-3 px-6"
-                >
-                  View Artist
-                </Link>
-              </div>
-
-              {/* Spotify Embed Placeholder */}
-              <div className="flex flex-col gap-6">
-                <div className="aspect-square bg-card rounded overflow-hidden flex items-center justify-center border border-border/50">
-                  <div className="text-center p-8">
-                    <p className="label-uppercase mb-2">Press Photo</p>
-                    <p className="body-sm">Coming soon</p>
-                  </div>
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    to="/artists/breaking-out"
+                    className="btn-outline text-xs py-3 px-6"
+                  >
+                    View Artist
+                  </Link>
                 </div>
-                <div className="bg-card rounded p-4 border border-border/50">
+
+                {/* Spotify Embed */}
+                <div className="mt-8 bg-card rounded p-4 border border-border/50">
                   <iframe
                     style={{ borderRadius: "8px" }}
                     src="https://open.spotify.com/embed/artist/0TnOYISbd1XYRBk9myaseg?utm_source=generator&theme=0"
