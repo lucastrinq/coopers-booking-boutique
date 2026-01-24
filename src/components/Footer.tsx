@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import logoFull from "@/assets/logo-full.png";
 
 const Footer = () => {
   const microStatements = [
-    "Independent since 2025",
-    "Selective roster",
+    "Curated venues",
+    "Selective process",
     "Emerging artists only",
   ];
 
@@ -13,9 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-xl tracking-wide text-foreground mb-4">
-              Coopers Booking
-            </h3>
+            <img src={logoFull} alt="Coopers Booking" className="h-10 mb-4" />
             <p className="body-sm max-w-xs">
               Boutique booking & management for emerging bands.
             </p>
@@ -37,6 +36,7 @@ const Footer = () => {
 
           {/* Micro Statements */}
           <div className="md:text-right">
+            <p className="text-primary font-serif text-lg mb-4">How we proceed</p>
             <div className="flex flex-col gap-2">
               {microStatements.map((statement) => (
                 <span key={statement} className="body-sm">

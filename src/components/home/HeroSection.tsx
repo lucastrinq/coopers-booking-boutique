@@ -20,20 +20,6 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 section-container">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo Icon */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-8"
-          >
-            <img 
-              src={logoIcon} 
-              alt="Coopers Booking" 
-              className="h-16 md:h-20 mx-auto opacity-90"
-            />
-          </motion.div>
-
           {/* Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
