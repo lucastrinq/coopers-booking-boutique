@@ -1,8 +1,6 @@
 import AnimatedSection from "../AnimatedSection";
-
 const ContactSection = () => {
-  return (
-    <section className="section-padding bg-charcoal-light">
+  return <section className="section-padding bg-charcoal-light">
       <div className="section-container">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
@@ -13,18 +11,11 @@ const ContactSection = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
-            <p className="body-lg mb-12">
-              Whether you're a venue looking for emerging talent, an artist seeking 
-              representation, or a promoter interested in collaboration — we'd love 
-              to hear from you.
-            </p>
+            <p className="body-lg mb-12">Whether you're a venue looking for emerging talent, an artist seeking representation, or a promoter interested in collaboration, we'd love to hear from you.</p>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <a
-              href="mailto:booking.coopers@gmail.com"
-              className="inline-block font-serif text-2xl md:text-3xl text-primary hover:text-foreground transition-colors duration-500"
-            >
+            <a href="mailto:booking.coopers@gmail.com" className="inline-block font-serif text-2xl md:text-3xl text-primary hover:text-foreground transition-colors duration-500">
               booking.coopers@gmail.com
             </a>
           </AnimatedSection>
@@ -36,8 +27,6 @@ const ContactSection = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
