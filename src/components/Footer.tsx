@@ -11,17 +11,17 @@ const Footer = () => {
   return (
     <footer className="bg-charcoal border-t border-border/30">
       <div className="section-container py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 items-start">
           {/* Brand */}
-          <div>
-            <img src={logoFull} alt="Coopers Booking" className="h-10 mb-4" />
+          <div className="flex flex-col">
+            <img src={logoFull} alt="Coopers Booking" className="h-14 md:h-16 mb-4 -ml-1" />
             <p className="body-sm max-w-xs">
               Boutique booking & management for emerging bands.
             </p>
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="flex flex-col">
             <p className="label-uppercase mb-4">Contact</p>
             <a
               href="mailto:booking.coopers@gmail.com"
@@ -35,9 +35,9 @@ const Footer = () => {
           </div>
 
           {/* Micro Statements */}
-          <div className="md:text-right">
+          <div className="flex flex-col md:items-end">
             <p className="text-primary font-serif text-lg mb-4">How we proceed</p>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 md:text-right">
               {microStatements.map((statement) => (
                 <span key={statement} className="body-sm">
                   {statement}
