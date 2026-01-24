@@ -24,7 +24,6 @@ const Navigation = () => {
   const navLinks = [
     { name: "Artists", href: "/artists" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -48,7 +47,7 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-10">
-              {navLinks.map((link) => (
+              {navLinks.filter(link => link.name !== "Contact").map((link) => (
                 <Link
                   key={link.name}
                   to={link.href}
@@ -59,7 +58,7 @@ const Navigation = () => {
               ))}
               <Link
                 to="/contact"
-                className="btn-outline text-xs py-3 px-6"
+                className="btn-outline text-xs py-3 px-6 transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:scale-110"
               >
                 Contact
               </Link>
