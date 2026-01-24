@@ -76,16 +76,16 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
           >
             <Link
-              to="/contact"
+              to="/contact?subject=booking"
               className="btn-primary"
             >
-              I want to have concerts
+              Book a band
             </Link>
             <Link
-              to="/contact"
+              to="/contact?subject=artist"
               className="btn-outline"
             >
-              Book a band
+              Get concerts
             </Link>
           </motion.div>
 
