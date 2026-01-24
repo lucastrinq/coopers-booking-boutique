@@ -150,7 +150,7 @@ const ArtistDetail = () => {
                       For booking inquiries, please contact us directly.
                     </p>
                     <a
-                      href="mailto:coopers.booking@gmail.com"
+                      href="mailto:booking.coopers@gmail.com"
                       className="btn-primary"
                     >
                       Contact for Booking

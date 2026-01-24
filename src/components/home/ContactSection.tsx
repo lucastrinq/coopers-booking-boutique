@@ -22,10 +22,10 @@ const ContactSection = () => {
 
           <AnimatedSection delay={0.2}>
             <a
-              href="mailto:coopers.booking@gmail.com"
+              href="mailto:booking.coopers@gmail.com"
               className="inline-block font-serif text-2xl md:text-3xl text-primary hover:text-foreground transition-colors duration-500"
             >
-              coopers.booking@gmail.com
+              booking.coopers@gmail.com
             </a>
           </AnimatedSection>
 
