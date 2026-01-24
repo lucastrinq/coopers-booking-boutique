@@ -1,29 +1,118 @@
+import { motion } from "framer-motion";
+import logoFull from "@/assets/logo-full.png";
+import logoIcon from "@/assets/logo-icon.png";
+import heroBg from "@/assets/hero-bg.jpg";
+import { Link } from "react-router-dom";
+
 const HeroSection = () => {
-  return <div className="min-h-[90vh] flex items-center justify-center px-6">
-      <div className="max-w-3xl text-center space-y-6">
-        <h1 className="text-4xl md:text-5xl font-serif tracking-wide">
-          Boutique booking & management<br />for emerging bands
-        </h1>
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroBg} 
+          alt="" 
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+      </div>
 
-        <p className="uppercase tracking-widest text-sm opacity-80">
-          Local · Human · Artist-first
-        </p>
+      {/* Content */}
+      <div className="relative z-10 section-container">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Logo Icon */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="mb-8"
+          >
+            <img 
+              src={logoIcon} 
+              alt="Coopers Booking" 
+              className="h-16 md:h-20 mx-auto opacity-90"
+            />
+          </motion.div>
 
-        <p className="text-lg opacity-90 py-[10px]">Coopers Booking is an independent booking & management partner working closely with emerging bands to build meaningful live momentum.  
+          {/* Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="headline-xl text-foreground mb-6"
+          >
+            Boutique booking & management
+            <br />
+            <span className="text-primary">for emerging bands</span>
+          </motion.h1>
 
+          {/* Tagline */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="label-uppercase mb-8"
+          >
+            Local · Human · Artist-first
+          </motion.p>
 
-Show by show, scene by scene, we curate the best concert venues, create tailored tour management strategies, and help you progress in your current situation and ambitions. </p>
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="body-lg max-w-2xl mx-auto mb-12"
+          >
+            Coopers Booking is an independent booking & management partner 
+            working closely with emerging bands to build meaningful live momentum. 
+            Show by show, scene by scene.
+          </motion.p>
 
-        <div className="pt-6">
-          <a href="mailto:booking.coopers@gmail.com" className="inline-block border border-current px-6 py-3 tracking-wide hover:opacity-80 transition">
-            Booking inquiries
-          </a>
+          {/* CTAs */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+          >
+            <Link
+              to="/contact"
+              className="btn-primary"
+            >
+              I want to have concerts
+            </Link>
+            <Link
+              to="/contact"
+              className="btn-outline"
+            >
+              Book a band
+            </Link>
+          </motion.div>
 
-          <p className="mt-4 text-sm opacity-70">
+          {/* Email */}
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            href="mailto:booking.coopers@gmail.com"
+            className="inline-block text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm tracking-wide"
+          >
             booking.coopers@gmail.com
-          </p>
+          </motion.a>
         </div>
       </div>
-    </div>;
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <div className="w-px h-16 bg-gradient-to-b from-transparent via-muted-foreground/50 to-transparent" />
+      </motion.div>
+    </section>
+  );
 };
+
 export default HeroSection;

@@ -15,7 +15,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Create mailto link with form data
-    const mailtoLink = `mailto:coopers.booking@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
+    const mailtoLink = `mailto:booking.coopers@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
     window.location.href = mailtoLink;
   };
 
@@ -54,10 +54,10 @@ const Contact = () => {
                 <div>
                   <p className="label-uppercase mb-6">Email Us Directly</p>
                   <a
-                    href="mailto:coopers.booking@gmail.com"
+                    href="mailto:booking.coopers@gmail.com"
                     className="font-serif text-2xl md:text-3xl text-primary hover:text-foreground transition-colors duration-500 block mb-8"
                   >
-                    coopers.booking@gmail.com
+                    booking.coopers@gmail.com
                   </a>
                   
                   <div className="divider-line my-8 opacity-30" />

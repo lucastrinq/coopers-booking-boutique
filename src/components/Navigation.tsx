@@ -57,12 +57,12 @@ const Navigation = () => {
                   {link.name}
                 </Link>
               ))}
-              <a
-                href="mailto:coopers.booking@gmail.com"
+              <Link
+                to="/contact"
                 className="btn-outline text-xs py-3 px-6"
               >
-                Inquiries
-              </a>
+                Contact
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -103,15 +103,18 @@ const Navigation = () => {
                   </Link>
                 </motion.div>
               ))}
-              <motion.a
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                href="mailto:coopers.booking@gmail.com"
-                className="btn-primary mt-4"
               >
-                Inquiries
-              </motion.a>
+                <Link
+                  to="/contact"
+                  className="btn-primary mt-4 inline-block"
+                >
+                  Contact
+                </Link>
+              </motion.div>
             </div>
           </motion.div>
         )}

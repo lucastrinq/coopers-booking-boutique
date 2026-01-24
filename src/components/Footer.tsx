@@ -25,10 +25,10 @@ const Footer = () => {
           <div>
             <p className="label-uppercase mb-4">Contact</p>
             <a
-              href="mailto:coopers.booking@gmail.com"
+              href="mailto:booking.coopers@gmail.com"
               className="text-foreground hover:text-primary transition-colors duration-300"
             >
-              coopers.booking@gmail.com
+              booking.coopers@gmail.com
             </a>
             <p className="body-sm mt-4">
               Based in Belgium — working locally & beyond.

@@ -28,8 +28,8 @@ const ArtistsSection = () => {
                 <p className="body-md mb-6">Raw energy meets guitar hero melodies. Breaking Out delivers powerful live performances that leave audiences wanting always more. A band on the verge of growing into the next rockstars of our generation.</p>
                 <div className="mb-6">
                   <p className="label-uppercase mb-2">Booking Contact</p>
-                  <a href="mailto:coopers.booking@gmail.com" className="text-foreground hover:text-primary transition-colors">
-                    coopers.booking@gmail.com
+                  <a href="mailto:booking.coopers@gmail.com" className="text-foreground hover:text-primary transition-colors">
+                    booking.coopers@gmail.com
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-4">

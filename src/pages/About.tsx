@@ -121,7 +121,7 @@ const About = () => {
               <p className="font-serif text-2xl md:text-3xl text-foreground mb-8 max-w-2xl mx-auto">
                 Interested in working together?
               </p>
-              <a href="mailto:coopers.booking@gmail.com" className="btn-primary">
+              <a href="mailto:booking.coopers@gmail.com" className="btn-primary">
                 Get in Touch
               </a>
             </AnimatedSection>
