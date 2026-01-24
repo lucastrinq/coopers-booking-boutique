@@ -19,7 +19,7 @@ const WhatWeDoSection = () => {
 
         <AnimatedSection delay={0.1}>
           <div className="mb-16 max-w-xl">
-            <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed">We don't chase to attract numbers.
+            <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed">We don't book blindly.
 We build you a perfect stage to shine.<br />
               <span className="text-primary">We build you a perfect stage to shine.</span>
             </p>
