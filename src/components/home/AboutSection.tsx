@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import AnimatedSection from "../AnimatedSection";
-
 const AboutSection = () => {
-  return (
-    <section className="section-padding">
+  return <section className="section-padding">
       <div className="section-container">
         <AnimatedSection>
           <p className="label-uppercase mb-6">About</p>
@@ -15,10 +13,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
           <AnimatedSection delay={0.1}>
             <div className="max-w-xl">
-              <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed mb-8">
-                We chose to stay small. Not because we lack ambition, but because 
-                we believe the best work happens through genuine relationships.
-              </p>
+              <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed mb-8">Our small curated batch of artists reflects our commitment to personalize each of our solution to their specific situation. We believe the best work happens through genuine relationships.</p>
               <p className="body-lg mb-8">
                 Coopers Booking was founded with a simple conviction: emerging artists 
                 deserve the same quality of representation that established acts receive. 
@@ -51,8 +46,6 @@ const AboutSection = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
