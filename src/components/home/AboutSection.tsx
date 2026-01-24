@@ -14,12 +14,7 @@ const AboutSection = () => {
           <AnimatedSection delay={0.1}>
             <div className="max-w-xl">
               <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed mb-8">Our small curated batch of artists reflects our commitment to personalize each of our solution to their specific situation. We believe the best work happens through genuine relationships.</p>
-              <p className="body-lg mb-8">
-                Coopers Booking was founded with a simple conviction: emerging artists 
-                deserve the same quality of representation that established acts receive. 
-                No assistant answering your emails, no junior agent cutting their teeth 
-                on your career — just experienced, dedicated partnership.
-              </p>
+              <p className="body-lg mb-8">Coopers Booking was founded with a simple conviction: emerging artists deserve the same quality of representation that established acts receive. No assistant answering your emails, no junior agent cutting their teeth on your career; just experienced, dedicated partnership.</p>
               <p className="body-md">
                 We work with a selective roster because we believe in depth over breadth. 
                 Every artist we represent has our full attention, our complete commitment, 
