@@ -23,7 +23,7 @@ const artistsData: Record<string, {
 The band's live shows have quickly earned them a reputation for intensity and authenticity. From intimate club shows to festival stages, Breaking Out delivers performances that connect — genuinely, powerfully, and memorably.
 
 Currently working on new material, the band continues to evolve while staying true to the artistic vision that makes them stand out in an increasingly homogenized musical landscape.`,
-    spotifyEmbed: "https://open.spotify.com/embed/artist/0TnOYISbd1XYRBk9myaseg?utm_source=generator&theme=0",
+    spotifyEmbed: "https://open.spotify.com/embed/artist/7BGqlvWx2XZ5oEvWdUprev?utm_source=generator&theme=0",
     image: artistImage,
   },
 };

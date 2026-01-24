@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
 
 const Contact = () => {
+  const [searchParams] = useSearchParams();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
+
+  useEffect(() => {
+    const subjectParam = searchParams.get("subject");
+    if (subjectParam === "booking") {
+      setFormData(prev => ({ ...prev, subject: "Booking Inquiry" }));
+    } else if (subjectParam === "artist") {
+      setFormData(prev => ({ ...prev, subject: "Artist Submission" }));
+    }
+  }, [searchParams]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

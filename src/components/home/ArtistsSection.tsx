@@ -42,7 +42,7 @@ const ArtistsSection = () => {
                 <div className="mt-8 bg-card rounded p-4 border border-border/50">
                   <iframe style={{
                   borderRadius: "8px"
-                }} src="https://open.spotify.com/embed/artist/0TnOYISbd1XYRBk9myaseg?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify Player" />
+                }} src="https://open.spotify.com/embed/artist/7BGqlvWx2XZ5oEvWdUprev?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify Player" />
                 </div>
               </div>
             </div>
