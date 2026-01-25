@@ -5,6 +5,9 @@ const values = [{
   name: "Human",
   description: "Real conversations, not automated responses. We know our artists, venues, and partners personally."
 }, {
+  name: "Artist-first",
+  description: "Your vision guides our work. We're partners in your career, not gatekeepers to it."
+}, {
   name: "Local",
   description: "Rooted in Belgium, connected across Europe. We understand the regional landscapes that matter."
 }, {
@@ -13,9 +16,6 @@ const values = [{
 }, {
   name: "Efficient",
   description: "No bloated teams or corporate overhead. Direct communication and fast, thoughtful action."
-}, {
-  name: "Artist-first",
-  description: "Your vision guides our work. We're partners in your career, not gatekeepers to it."
 }];
 
 const ApproachSection = () => {
