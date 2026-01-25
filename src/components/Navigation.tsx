@@ -38,7 +38,16 @@ const Navigation = () => {
       >
         <nav className="section-container">
           <div className="flex items-center justify-between h-20 md:h-24">
-            <Link to="/" className="group flex items-center gap-3">
+            <Link 
+              to="/" 
+              className="group flex items-center gap-3"
+              onClick={(e) => {
+                if (location.pathname === '/') {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
+            >
               <img src={logoIcon} alt="CB" className="h-8 md:h-10" />
               <span className="font-serif text-lg md:text-xl tracking-wide text-foreground transition-colors duration-300 group-hover:text-primary">
                 Coopers Booking
@@ -52,6 +61,12 @@ const Navigation = () => {
                   key={link.name}
                   to={link.href}
                   className="nav-link"
+                  onClick={(e) => {
+                    if (location.pathname === link.href) {
+                      e.preventDefault();
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                 >
                   {link.name}
                 </Link>
@@ -59,6 +74,12 @@ const Navigation = () => {
               <Link
                 to="/contact"
                 className="btn-outline text-xs py-3 px-6 transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:scale-110"
+                onClick={(e) => {
+                  if (location.pathname === '/contact') {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }
+                }}
               >
                 Contact
               </Link>
