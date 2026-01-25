@@ -1,4 +1,6 @@
 import AnimatedSection from "../AnimatedSection";
+import ScrollArrow from "../ScrollArrow";
+
 const services = [{
   title: "Live Booking",
   description: "Strategic venue partnerships and tour routing that makes sense for your career stage and artistic vision."
@@ -9,6 +11,7 @@ const services = [{
   title: "Artist Support",
   description: "Beyond bookings — guidance, advocacy, and genuine partnership in navigating the music industry."
 }];
+
 const WhatWeDoSection = () => {
   return <section className="section-padding bg-charcoal-light">
       <div className="section-container">
@@ -39,7 +42,10 @@ We build you a perfect stage to shine.<br />
               </div>
             </AnimatedSection>)}
         </div>
+
+        <ScrollArrow />
       </div>
     </section>;
 };
+
 export default WhatWeDoSection;
