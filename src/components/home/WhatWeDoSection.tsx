@@ -22,10 +22,8 @@ const WhatWeDoSection = () => {
 
         <AnimatedSection delay={0.1}>
           <div className="mb-16 max-w-xl">
-            <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed">We don't book blindly.
-We build you a perfect stage to shine.<br />
-              <span className="text-primary">We build you a perfect stage to shine.</span>
-            </p>
+            <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed">We don't book blindly.</p>
+            <p className="font-serif text-2xl md:text-3xl text-primary leading-relaxed mt-2">We build you a perfect stage to shine.</p>
           </div>
         </AnimatedSection>
 
