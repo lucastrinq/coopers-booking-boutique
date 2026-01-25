@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import AnimatedSection from "../AnimatedSection";
+import ScrollArrow from "../ScrollArrow";
 import artistImage from "@/assets/artist-breaking-out.jpg";
+
 const ArtistsSection = () => {
   return <section className="section-padding bg-charcoal-light">
       <div className="section-container">
@@ -54,7 +56,10 @@ const ArtistsSection = () => {
             More artists coming soon.
           </p>
         </AnimatedSection>
+
+        <ScrollArrow />
       </div>
     </section>;
 };
+
 export default ArtistsSection;

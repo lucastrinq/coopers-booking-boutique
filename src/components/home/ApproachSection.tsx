@@ -1,4 +1,6 @@
 import AnimatedSection from "../AnimatedSection";
+import ScrollArrow from "../ScrollArrow";
+
 const values = [{
   name: "Human",
   description: "Real conversations, not automated responses. We know our artists, venues, and partners personally."
@@ -15,6 +17,7 @@ const values = [{
   name: "Artist-first",
   description: "Your vision guides our work. We're partners in your career, not gatekeepers to it."
 }];
+
 const ApproachSection = () => {
   return <section className="section-padding">
       <div className="section-container">
@@ -37,7 +40,10 @@ const ApproachSection = () => {
               </div>
             </AnimatedSection>)}
         </div>
+
+        <ScrollArrow />
       </div>
     </section>;
 };
+
 export default ApproachSection;
