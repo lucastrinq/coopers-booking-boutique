@@ -15,10 +15,8 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
           <AnimatedSection delay={0.1}>
             <div className="max-w-xl">
-              <div className="border-l-2 border-primary pl-6 mb-8">
-                <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed mb-4">Our small curated batch of artists reflects our commitment to personalize each of our solution to their specific situation.</p>
-                <p className="font-serif text-xl md:text-2xl text-primary font-bold leading-relaxed">Every artist we represent has our full attention, our complete commitement, and our honest counsel.</p>
-              </div>
+              <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed mb-4">Our small curated batch of artists reflects our commitment to personalize each of our solution to their specific situation.</p>
+              <p className="font-serif text-xl md:text-2xl text-primary font-bold leading-relaxed mb-8">Every artist we represent has our full attention, our complete commitement, and our honest counsel.</p>
               <p className="body-lg mb-8">Coopers Booking was founded with a simple conviction: emerging artists deserve the same quality of representation that established acts receive. No assistant answering your emails, no junior agent cutting their teeth on your career; just experienced, dedicated partnership.</p>
               
             </div>
