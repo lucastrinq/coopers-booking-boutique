@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
+import ScrollArrow from "@/components/ScrollArrow";
 import { motion } from "framer-motion";
 
 const values = [
@@ -44,6 +46,7 @@ const About = () => {
                 deserve the same quality of representation that established acts receive.
               </p>
             </motion.div>
+            <ScrollArrow />
           </div>
         </section>
 
@@ -83,6 +86,7 @@ const About = () => {
                 </div>
               </AnimatedSection>
             </div>
+            <ScrollArrow />
           </div>
         </section>
 
@@ -111,6 +115,7 @@ const About = () => {
                 </AnimatedSection>
               ))}
             </div>
+            <ScrollArrow />
           </div>
         </section>
 
@@ -121,9 +126,9 @@ const About = () => {
               <p className="font-serif text-2xl md:text-3xl text-foreground mb-8 max-w-2xl mx-auto">
                 Interested in working together?
               </p>
-              <a href="mailto:booking.coopers@gmail.com" className="btn-primary">
+              <Link to="/contact" className="btn-primary">
                 Get in Touch
-              </a>
+              </Link>
             </AnimatedSection>
           </div>
         </section>
