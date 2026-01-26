@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import AnimatedSection from "../AnimatedSection";
 import ScrollArrow from "../ScrollArrow";
-import artistImage from "@/assets/artist-breaking-out.jpg";
+import artistImage from "@/assets/breaking-out-new.jpg";
 
 const ArtistsSection = () => {
   return <section className="section-padding bg-charcoal-light">
@@ -17,7 +17,7 @@ const ArtistsSection = () => {
               {/* Artist Image */}
               <div className="order-2 lg:order-1">
                 <div className="aspect-square overflow-hidden rounded bg-card">
-                  <img alt="Breaking Out" className="w-full h-full object-contain" src="/lovable-uploads/de3e4f7b-5b39-40ea-b8fd-b1f12d426332.jpg" />
+                  <img alt="Breaking Out" className="w-full h-full object-contain" src={artistImage} />
                 </div>
               </div>
 

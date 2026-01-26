@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import artistImage from "@/assets/artist-breaking-out.jpg";
+import artistImage from "@/assets/breaking-out-new.jpg";
 
 const artistsData: Record<string, {
   name: string;
@@ -17,12 +17,12 @@ const artistsData: Record<string, {
   "breaking-out": {
     name: "Breaking Out",
     genre: "Alternative Rock",
-    bio: "Raw energy meets introspective songwriting. A band on the verge of something significant.",
-    longBio: `Breaking Out emerged from the Belgian underground scene with a sound that defies easy categorization. Their music blends raw, visceral energy with deeply introspective lyrics, creating performances that resonate long after the last note fades.
+    bio: "Raw gritty energy meets harmonized guitar melodies. Breaking Out delivers powerful live performances that leave audiences wanting always more. A band on the verge of growing into the next rockstars of our generation.",
+    longBio: `Breaking Out emerged from the Belgian underground scene with a sound that defies easy categorization. Their music blends raw, visceral energy with ear-catching melodies, creating performances that resonate long after the last note fades.
 
-The band's live shows have quickly earned them a reputation for intensity and authenticity. From intimate club shows to festival stages, Breaking Out delivers performances that connect — genuinely, powerfully, and memorably.
+This isn't just a rock band. It's an explosion of guitars, a rush of adrenaline, a raw sound that hits hard and shakes the stage. No pretence, just pure energy, sharp riffs, and an urgent need to play full throttle.
 
-Currently working on new material, the band continues to evolve while staying true to the artistic vision that makes them stand out in an increasingly homogenized musical landscape.`,
+The band's live shows have quickly earned them a reputation for intensity and authenticity. From intimate club shows to festival stages, Breaking Out delivers performances that connect genuinely, powerfully, and memorably.`,
     spotifyEmbed: "https://open.spotify.com/embed/artist/7BGqlvWx2XZ5oEvWdUprev?utm_source=generator&theme=0",
     image: artistImage,
   },
