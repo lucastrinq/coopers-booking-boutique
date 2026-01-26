@@ -54,7 +54,7 @@ const About = () => {
               <AnimatedSection>
                 <div>
                   <p className="label-uppercase mb-6">Our Philosophy</p>
-                  <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-8">We grow alongside our artists chose to stay small — not because we lack ambition, but because we believe the best work happens through genuine relationships.</p>
+                  <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-8">We grow alongside our artists because we believe the best work happens through mutual understanding and empathy. </p>
                 </div>
               </AnimatedSection>
 
