@@ -3,8 +3,14 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Instagram } from "lucide-react";
 import artistImage from "@/assets/breaking-out-new.jpg";
+
+const LinktreeIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <path d="M8.92 2.74l3.08 3.08 3.08-3.08 1.42 1.42L13.42 7.24H17v2h-3.59l3.09 3.09-1.42 1.42L12 10.66l-3.08 3.09-1.42-1.42L10.59 9.24H7v-2h3.59L7.5 4.16l1.42-1.42zM7 14h10v2H7v-2zm0 4h10v2H7v-2z"/>
+  </svg>
+);
 
 const artistsData: Record<string, {
   name: string;
@@ -13,6 +19,8 @@ const artistsData: Record<string, {
   longBio: string;
   spotifyEmbed: string;
   image: string;
+  instagram?: string;
+  linktree?: string;
 }> = {
   "breaking-out": {
     name: "Breaking Out",
@@ -25,6 +33,8 @@ This isn't just a rock band. It's an explosion of guitars, a rush of adrenaline,
 The band's live shows have quickly earned them a reputation for intensity and authenticity. From intimate club shows to festival stages, Breaking Out delivers performances that connect genuinely, powerfully, and memorably.`,
     spotifyEmbed: "https://open.spotify.com/embed/artist/7BGqlvWx2XZ5oEvWdUprev?utm_source=generator&theme=0",
     image: artistImage,
+    instagram: "https://www.instagram.com/breakingoutband/",
+    linktree: "https://linktr.ee/breakingoutband",
   },
 };
 
@@ -84,9 +94,35 @@ const ArtistDetail = () => {
               <h1 className="headline-xl text-foreground mb-6">
                 {artist.name}
               </h1>
-              <p className="font-serif text-xl md:text-2xl text-primary max-w-2xl">
+              <p className="font-serif text-xl md:text-2xl text-primary max-w-2xl mb-6">
                 {artist.bio}
               </p>
+              
+              {/* Social Links */}
+              <div className="flex gap-4">
+                {artist.instagram && (
+                  <a
+                    href={artist.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-card border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300 hover:scale-110"
+                    aria-label="Instagram"
+                  >
+                    <Instagram size={20} />
+                  </a>
+                )}
+                {artist.linktree && (
+                  <a
+                    href={artist.linktree}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-card border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300 hover:scale-110"
+                    aria-label="Linktree"
+                  >
+                    <LinktreeIcon />
+                  </a>
+                )}
+              </div>
             </motion.div>
             
             <motion.div
