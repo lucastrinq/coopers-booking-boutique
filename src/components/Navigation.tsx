@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logoIcon from "@/assets/logo-icon.png";
-import logoTextWhite from "@/assets/logo-text-white.png";
+import logoNav from "@/assets/logo-nav.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,8 +48,7 @@ const Navigation = () => {
                 }
               }}
             >
-              <img src={logoIcon} alt="CB" className="h-8 md:h-10" />
-              <img src={logoTextWhite} alt="Coopers Booking" className="h-5 md:h-6 object-contain" />
+              <img src={logoNav} alt="Coopers Booking" className="h-10 md:h-12 object-contain" />
             </Link>
 
             {/* Desktop Navigation */}
