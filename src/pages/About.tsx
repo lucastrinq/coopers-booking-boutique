@@ -4,39 +4,36 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import ScrollArrow from "@/components/ScrollArrow";
 import { motion } from "framer-motion";
-
-const values = [
-  {
-    title: "Human Connection",
-    description: "In an industry increasingly driven by algorithms and data, we believe in the irreplaceable value of human relationships. Every artist, venue, and promoter we work with knows they're dealing with real people who care about their success.",
-  },
-  {
-    title: "Long-term Thinking",
-    description: "We're not interested in quick wins that sacrifice an artist's long-term potential. We build careers methodically, sustainably, and with genuine consideration for each artist's unique path.",
-  },
-  {
-    title: "Local Expertise",
-    description: "Rooted in Belgium with deep connections across Europe, we understand the venues, promoters, and scenes that matter. This local knowledge allows us to create opportunities that larger agencies often miss.",
-  },
-  {
-    title: "Selective Partnership",
-    description: "We deliberately maintain a small roster because we believe every artist deserves dedicated attention. We're not building a database of acts — we're building lasting partnerships with artists we genuinely believe in.",
-  },
-];
-
+const values = [{
+  title: "Human Connection",
+  description: "In an industry increasingly driven by algorithms and data, we believe in the irreplaceable value of human relationships. Every artist, venue, and promoter we work with knows they're dealing with real people who care about their success."
+}, {
+  title: "Long-term Thinking",
+  description: "We're not interested in quick wins that sacrifice an artist's long-term potential. We build careers methodically, sustainably, and with genuine consideration for each artist's unique path."
+}, {
+  title: "Local Expertise",
+  description: "Rooted in Belgium with deep connections across Europe, we understand the venues, promoters, and scenes that matter. This local knowledge allows us to create opportunities that larger agencies often miss."
+}, {
+  title: "Selective Partnership",
+  description: "We deliberately maintain a small roster because we believe every artist deserves dedicated attention. We're not building a database of acts — we're building lasting partnerships with artists we genuinely believe in."
+}];
 const About = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       <main className="pt-32 md:pt-40">
         {/* Hero */}
         <section className="section-padding pt-8 md:pt-12">
           <div className="section-container">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 30
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.8,
+            ease: [0.16, 1, 0.3, 1]
+          }}>
               <p className="label-uppercase mb-6">About</p>
               <h1 className="headline-xl text-foreground mb-8 max-w-4xl">
                 A boutique agency by design
@@ -57,11 +54,7 @@ const About = () => {
               <AnimatedSection>
                 <div>
                   <p className="label-uppercase mb-6">Our Philosophy</p>
-                  <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-8">
-                    We chose to stay small — not because we lack ambition, 
-                    but because we believe the best work happens through 
-                    genuine relationships.
-                  </p>
+                  <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-8">We grow alongside our artists chose to stay small — not because we lack ambition, but because we believe the best work happens through genuine relationships.</p>
                 </div>
               </AnimatedSection>
 
@@ -78,11 +71,7 @@ const About = () => {
                     Just experienced, dedicated partnership from people who genuinely 
                     understand what it takes to build a sustainable career in music.
                   </p>
-                  <p className="body-md">
-                    We're selective because we care. Every artist we represent has 
-                    our full attention, our complete commitment, and our honest counsel — 
-                    even when that means saying things they might not want to hear.
-                  </p>
+                  <p className="body-md">We're selective because we care. Every artist we represent has our full attention, our complete commitment, and our honest counsel... even when that means saying things they might not want to hear.</p>
                 </div>
               </AnimatedSection>
             </div>
@@ -101,8 +90,7 @@ const About = () => {
             </AnimatedSection>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-              {values.map((value, index) => (
-                <AnimatedSection key={value.title} delay={0.1 + index * 0.1}>
+              {values.map((value, index) => <AnimatedSection key={value.title} delay={0.1 + index * 0.1}>
                   <div className="card-subtle h-full">
                     <div className="divider-line-accent mb-6" />
                     <h3 className="headline-sm text-foreground mb-4">
@@ -112,8 +100,7 @@ const About = () => {
                       {value.description}
                     </p>
                   </div>
-                </AnimatedSection>
-              ))}
+                </AnimatedSection>)}
             </div>
             <ScrollArrow />
           </div>
@@ -134,8 +121,6 @@ const About = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
