@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logoIcon from "@/assets/logo-icon.png";
+import logoTextWhite from "@/assets/logo-text-white.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,9 +50,7 @@ const Navigation = () => {
               }}
             >
               <img src={logoIcon} alt="CB" className="h-8 md:h-10" />
-              <span className="font-serif text-lg md:text-xl tracking-wide text-foreground transition-colors duration-300 group-hover:text-primary">
-                Coopers Booking
-              </span>
+              <img src={logoTextWhite} alt="Coopers Booking" className="h-5 md:h-6 object-contain" />
             </Link>
 
             {/* Desktop Navigation */}

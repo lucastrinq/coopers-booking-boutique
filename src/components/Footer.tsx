@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logoFull from "@/assets/logo-full.png";
+import logoFooter from "@/assets/logo-footer.png";
 
 const Footer = () => {
   const microStatements = [
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-start">
           {/* Brand - 3 columns */}
           <div className="flex flex-col md:col-span-3">
-            <img src={logoFull} alt="Coopers Booking" className="h-14 md:h-16 w-auto object-contain object-left mb-4" />
+            <img src={logoFooter} alt="Coopers Booking" className="h-14 md:h-16 w-auto object-contain object-left mb-4" />
             <p className="body-sm max-w-xs">
               Boutique booking & management for emerging bands.
             </p>
