@@ -14,7 +14,7 @@ const values = [{
   name: "Serious",
   description: "Professional, reliable, and committed. We treat every show and every artist with the respect they deserve."
 }, {
-  name: "Efficient",
+  name: "Action-driven",
   description: "No bloated teams or corporate overhead. Direct communication and fast, thoughtful action."
 }];
 

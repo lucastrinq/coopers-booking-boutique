@@ -3,13 +3,13 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
-import artistImage from "@/assets/artist-breaking-out.jpg";
+import artistImage from "@/assets/breaking-out-new.jpg";
 
 const artists = [
   {
     id: "breaking-out",
     name: "Breaking Out",
-    description: "Raw energy meets introspective songwriting. A band on the verge of something significant.",
+    description: "Raw gritty energy meets harmonized guitar melodies. Breaking Out delivers powerful live performances that leave audiences wanting always more. A band on the verge of growing into the next rockstars of our generation.",
     genre: "Alternative Rock",
     image: artistImage,
   },

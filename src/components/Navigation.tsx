@@ -48,7 +48,7 @@ const Navigation = () => {
                 }
               }}
             >
-              <img src={logoNav} alt="Coopers Booking" className="h-10 md:h-12 object-contain" />
+              <img src={logoNav} alt="Coopers Booking" className="h-12 md:h-14 object-contain" />
             </Link>
 
             {/* Desktop Navigation */}
