@@ -15,7 +15,7 @@ const values = [{
   description: "Rooted in Belgium with deep connections across Europe, we understand the venues, promoters, and scenes that matter. This local knowledge allows us to create opportunities that larger agencies often miss."
 }, {
   title: "Selective Partnership",
-  description: "We deliberately maintain a small roster because we believe every artist deserves dedicated attention. We're not building a database of acts — we're building lasting partnerships with artists we genuinely believe in."
+  description: "We deliberately maintain a small roster because we believe every artist deserves dedicated attention. We're not building a database of acts, but lasting partnerships with artists we genuinely believe in."
 }];
 const About = () => {
   return <div className="min-h-screen bg-background">
