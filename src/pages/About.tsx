@@ -60,7 +60,7 @@ const About = () => {
 
               <AnimatedSection delay={0.1}>
                 <div className="space-y-6">
-                  <p className="body-lg">
+                  <p className="body-md">
                     Too often, emerging artists sign with agencies that promise 
                     the world, only to find themselves lost in a roster of hundreds, 
                     managed by junior agents learning on their careers.
