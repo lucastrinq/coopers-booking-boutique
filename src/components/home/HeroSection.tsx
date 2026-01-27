@@ -7,6 +7,60 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40">
+      {/* Elegant curvy lines - Left side */}
+      <svg 
+        className="absolute left-0 top-0 h-full w-1/3 opacity-[0.08] pointer-events-none"
+        viewBox="0 0 400 1000"
+        preserveAspectRatio="xMinYMid slice"
+        fill="none"
+      >
+        <path 
+          d="M-100 0 Q150 250 50 500 T-50 1000" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="2"
+          fill="none"
+        />
+        <path 
+          d="M-50 100 Q200 350 100 600 T0 1100" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="1.5"
+          fill="none"
+        />
+        <path 
+          d="M0 -50 Q250 200 150 450 T50 950" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="1"
+          fill="none"
+        />
+      </svg>
+
+      {/* Elegant curvy lines - Right side */}
+      <svg 
+        className="absolute right-0 top-0 h-full w-1/3 opacity-[0.08] pointer-events-none"
+        viewBox="0 0 400 1000"
+        preserveAspectRatio="xMaxYMid slice"
+        fill="none"
+      >
+        <path 
+          d="M500 0 Q250 250 350 500 T450 1000" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="2"
+          fill="none"
+        />
+        <path 
+          d="M450 100 Q200 350 300 600 T400 1100" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="1.5"
+          fill="none"
+        />
+        <path 
+          d="M400 -50 Q150 200 250 450 T350 950" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="1"
+          fill="none"
+        />
+      </svg>
+
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 

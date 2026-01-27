@@ -14,22 +14,8 @@ const services = [{
 
 const WhatWeDoSection = () => {
   return (
-    <section className="section-padding bg-charcoal-light relative overflow-hidden">
-      {/* Subtle diagonal lines background */}
-      <div 
-        className="absolute inset-0 opacity-[0.04] pointer-events-none"
-        style={{
-          backgroundImage: `repeating-linear-gradient(
-            -45deg,
-            transparent,
-            transparent 40px,
-            hsl(var(--primary)) 40px,
-            hsl(var(--primary)) 41px
-          )`,
-        }}
-      />
-      
-      <div className="section-container relative z-10">
+    <section className="section-padding bg-charcoal-light">
+      <div className="section-container">
         <AnimatedSection>
           <p className="label-uppercase mb-6">What We Do</p>
           <h2 className="headline-lg text-foreground mb-8 max-w-2xl">We focus on what matters most: The Artist</h2>
