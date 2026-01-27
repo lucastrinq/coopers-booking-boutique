@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
 import artistImage from "@/assets/breaking-out-new.jpg";
+import ulysseImage from "@/assets/ulysse-ponce.jpg";
 
 const artists = [
   {
@@ -12,6 +13,13 @@ const artists = [
     description: "Raw gritty energy meets harmonized guitar melodies. Breaking Out delivers powerful live performances that leave audiences wanting always more. A band on the verge of growing into the next rockstars of our generation.",
     genre: "Alternative Rock",
     image: artistImage,
+  },
+  {
+    id: "ulysse-ponce",
+    name: "Ulysse Poncé",
+    description: "Warm and intimate acoustic performances that blend energy, emotion, and close interaction with the audience. A versatile artist reinterpreting iconic songs with a personal, heartfelt approach.",
+    genre: "Acoustic Pop-Rock",
+    image: ulysseImage,
   },
 ];
 
@@ -44,7 +52,7 @@ const Artists = () => {
                     to={`/artists/${artist.id}`}
                     className="block card-subtle group transition-all duration-500 hover:border-primary/50"
                   >
-                    <div className="flex flex-col md:flex-row gap-8">
+                    <div className={`flex flex-col md:flex-row gap-8 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                       {/* Artist Image */}
                       <div className="w-full md:w-64 lg:w-80 flex-shrink-0">
                         <div className="aspect-square overflow-hidden rounded bg-card">

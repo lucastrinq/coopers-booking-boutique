@@ -12,12 +12,14 @@ const LinktreeIcon = () => (
   </svg>
 );
 
+import ulysseImage from "@/assets/ulysse-ponce.jpg";
+
 const artistsData: Record<string, {
   name: string;
   genre: string;
   bio: string;
   longBio: string;
-  spotifyEmbed: string;
+  spotifyEmbed?: string;
   image: string;
   instagram?: string;
   linktree?: string;
@@ -35,6 +37,15 @@ The band's live shows have quickly earned them a reputation for intensity and au
     image: artistImage,
     instagram: "https://www.instagram.com/breakingoutband/",
     linktree: "https://linktr.ee/breakingoutband",
+  },
+  "ulysse-ponce": {
+    name: "Ulysse Poncé",
+    genre: "Acoustic Pop-Rock",
+    bio: "Warm and intimate acoustic performances that blend energy, emotion, and close interaction with the audience. A versatile artist reinterpreting iconic songs with a personal, heartfelt approach.",
+    longBio: `Ulysse Poncé offers live acoustic guitar & vocal performances built around an eclectic pop-rock covers repertoire. From Adele to Oasis, including Led Zeppelin, French Classic Aznavour, and Stromae, he reinterprets iconic songs with a personal, stripped-down and heartfelt approach, drawing from a catalogue of over 200 songs.
+
+In a warm and intimate format, he blends energy, emotion, and close interaction with the audience. A versatile setup, perfectly suited for your cafés-concerts, clubs, as well as private and cultural events.`,
+    image: ulysseImage,
   },
 };
 
@@ -160,24 +171,26 @@ const ArtistDetail = () => {
 
               {/* Media & Booking */}
               <div className="space-y-12">
-                <AnimatedSection delay={0.1}>
-                  <div>
-                    <p className="label-uppercase mb-6">Listen</p>
-                    <div className="bg-card rounded border border-border/50 p-4">
-                      <iframe
-                        style={{ borderRadius: "8px" }}
-                        src={artist.spotifyEmbed}
-                        width="100%"
-                        height="352"
-                        frameBorder="0"
-                        allowFullScreen
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                        title="Spotify Player"
-                      />
+                {artist.spotifyEmbed && (
+                  <AnimatedSection delay={0.1}>
+                    <div>
+                      <p className="label-uppercase mb-6">Listen</p>
+                      <div className="bg-card rounded border border-border/50 p-4">
+                        <iframe
+                          style={{ borderRadius: "8px" }}
+                          src={artist.spotifyEmbed}
+                          width="100%"
+                          height="352"
+                          frameBorder="0"
+                          allowFullScreen
+                          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                          loading="lazy"
+                          title="Spotify Player"
+                        />
+                      </div>
                     </div>
-                  </div>
-                </AnimatedSection>
+                  </AnimatedSection>
+                )}
 
                 <AnimatedSection delay={0.2}>
                   <div className="card-subtle">
