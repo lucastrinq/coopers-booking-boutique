@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import AnimatedSection from "../AnimatedSection";
 import ScrollArrow from "../ScrollArrow";
-import artistImage from "@/assets/breaking-out-1.jpg";
+import artistImage from "@/assets/breaking-out-new.jpg";
 import ulysseImage from "@/assets/ulysse-ponce.jpg";
 
 const artists = [

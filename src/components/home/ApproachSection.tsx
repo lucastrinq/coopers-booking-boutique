@@ -11,9 +11,6 @@ const values = [{
   name: "Local",
   description: "Rooted in Belgium, connected across Europe. We understand the regional landscapes that matter."
 }, {
-  name: "Serious",
-  description: "Professional, reliable, and committed. We treat every show and every artist with the respect they deserve."
-}, {
   name: "Action-driven",
   description: "No bloated teams or corporate overhead. Direct communication and fast, thoughtful action."
 }];

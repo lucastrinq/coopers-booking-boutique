@@ -95,7 +95,7 @@ const ArtistImageCarousel = ({ images, artistName }: ArtistImageCarouselProps) =
       {showLeftArrow && (
         <button
           onClick={goToPrevious}
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-foreground/60 hover:text-foreground rounded-full transition-all duration-300 hover:bg-background/40 hover:ring-2 hover:ring-foreground/30"
+          className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-foreground/60 hover:text-foreground bg-background/20 rounded-full transition-all duration-300 hover:bg-background/40 hover:ring-2 hover:ring-foreground/30"
           aria-label="Previous image"
         >
           <ChevronLeft size={24} />
@@ -106,7 +106,7 @@ const ArtistImageCarousel = ({ images, artistName }: ArtistImageCarouselProps) =
       {showRightArrow && (
         <button
           onClick={goToNext}
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-foreground/60 hover:text-foreground rounded-full transition-all duration-300 hover:bg-background/40 hover:ring-2 hover:ring-foreground/30"
+          className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-foreground/60 hover:text-foreground bg-background/20 rounded-full transition-all duration-300 hover:bg-background/40 hover:ring-2 hover:ring-foreground/30"
           aria-label="Next image"
         >
           <ChevronRight size={24} />

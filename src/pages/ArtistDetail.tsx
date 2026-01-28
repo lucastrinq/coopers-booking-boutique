@@ -7,8 +7,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Instagram } from "lucide-react";
 
 // Breaking Out images
-import breakingOut1 from "@/assets/breaking-out-1.jpg";
-import breakingOut2 from "@/assets/breaking-out-2.jpg";
+import breakingOutNew from "@/assets/breaking-out-new.jpg";
 import breakingOut3 from "@/assets/breaking-out-3.jpg";
 import breakingOut4 from "@/assets/breaking-out-4.jpg";
 import breakingOut5 from "@/assets/breaking-out-5.jpg";
@@ -47,8 +46,7 @@ This isn't just a rock band. It's an explosion of guitars, a rush of adrenaline,
 The band's live shows have quickly earned them a reputation for intensity and authenticity. From intimate club shows to festival stages, Breaking Out delivers performances that connect genuinely, powerfully, and memorably.`,
     spotifyEmbed: "https://open.spotify.com/embed/artist/7BGqlvWx2XZ5oEvWdUprev?utm_source=generator&theme=0",
     images: [
-      breakingOut1,
-      breakingOut2,
+      breakingOutNew,
       breakingOut3,
       breakingOut4,
       breakingOut5,
