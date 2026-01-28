@@ -2,9 +2,23 @@ import { useParams, Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
+import ArtistImageCarousel from "@/components/ArtistImageCarousel";
 import { motion } from "framer-motion";
 import { ArrowLeft, Instagram } from "lucide-react";
-import artistImage from "@/assets/breaking-out-new.jpg";
+
+// Breaking Out images
+import breakingOut1 from "@/assets/breaking-out-1.jpg";
+import breakingOut2 from "@/assets/breaking-out-2.jpg";
+import breakingOut3 from "@/assets/breaking-out-3.jpg";
+import breakingOut4 from "@/assets/breaking-out-4.jpg";
+import breakingOut5 from "@/assets/breaking-out-5.jpg";
+import breakingOut6 from "@/assets/breaking-out-6.jpg";
+import breakingOut7 from "@/assets/breaking-out-7.jpg";
+import breakingOut8 from "@/assets/breaking-out-8.jpg";
+import breakingOut9 from "@/assets/breaking-out-9.jpg";
+
+// Ulysse Poncé image
+import ulysseImage from "@/assets/ulysse-ponce.jpg";
 
 const LinktreeIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -12,15 +26,13 @@ const LinktreeIcon = () => (
   </svg>
 );
 
-import ulysseImage from "@/assets/ulysse-ponce.jpg";
-
 const artistsData: Record<string, {
   name: string;
   genre: string;
   bio: string;
   longBio: string;
   spotifyEmbed?: string;
-  image: string;
+  images: string[];
   instagram?: string;
   linktree?: string;
 }> = {
@@ -34,7 +46,17 @@ This isn't just a rock band. It's an explosion of guitars, a rush of adrenaline,
 
 The band's live shows have quickly earned them a reputation for intensity and authenticity. From intimate club shows to festival stages, Breaking Out delivers performances that connect genuinely, powerfully, and memorably.`,
     spotifyEmbed: "https://open.spotify.com/embed/artist/7BGqlvWx2XZ5oEvWdUprev?utm_source=generator&theme=0",
-    image: artistImage,
+    images: [
+      breakingOut1,
+      breakingOut2,
+      breakingOut3,
+      breakingOut4,
+      breakingOut5,
+      breakingOut6,
+      breakingOut7,
+      breakingOut8,
+      breakingOut9,
+    ],
     instagram: "https://www.instagram.com/breakingoutband/",
     linktree: "https://linktr.ee/breakingoutband",
   },
@@ -45,7 +67,7 @@ The band's live shows have quickly earned them a reputation for intensity and au
     longBio: `Ulysse Poncé offers live acoustic guitar & vocal performances built around an eclectic pop-rock covers repertoire. From Adele to Oasis, including Led Zeppelin, French Classic Aznavour, and Stromae, he reinterprets iconic songs with a personal, stripped-down and heartfelt approach, drawing from a catalogue of over 200 songs.
 
 In a warm and intimate format, he blends energy, emotion, and close interaction with the audience. A versatile setup, perfectly suited for your cafés-concerts, clubs, as well as private and cultural events.`,
-    image: ulysseImage,
+    images: [ulysseImage],
   },
 };
 
@@ -140,13 +162,8 @@ const ArtistDetail = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="aspect-square rounded overflow-hidden"
             >
-              <img 
-                src={artist.image} 
-                alt={artist.name}
-                className="w-full h-full object-cover"
-              />
+              <ArtistImageCarousel images={artist.images} artistName={artist.name} />
             </motion.div>
           </div>
         </section>

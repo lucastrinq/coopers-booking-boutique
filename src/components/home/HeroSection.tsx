@@ -9,55 +9,89 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40">
       {/* Elegant curvy lines - Left side */}
       <svg 
-        className="absolute left-0 top-0 h-full w-1/3 opacity-100 pointer-events-none"
-        viewBox="0 0 400 1000"
+        className="absolute left-0 top-0 h-full w-2/5 pointer-events-none"
+        viewBox="0 0 500 1000"
         preserveAspectRatio="xMinYMid slice"
         fill="none"
       >
         <path 
-          d="M-100 0 Q150 250 50 500 T-50 1000" 
+          d="M-150 0 Q200 200 100 400 T-100 800 Q50 900 -50 1000" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="2.5"
+          fill="none"
+          opacity="0.7"
+        />
+        <path 
+          d="M-80 50 Q250 300 120 550 T-30 950" 
           stroke="hsl(var(--primary))" 
           strokeWidth="2"
           fill="none"
+          opacity="0.5"
         />
         <path 
-          d="M-50 100 Q200 350 100 600 T0 1100" 
+          d="M0 -100 Q300 150 180 380 T80 700 Q200 850 100 1000" 
           stroke="hsl(var(--primary))" 
           strokeWidth="1.5"
           fill="none"
+          opacity="0.4"
         />
         <path 
-          d="M0 -50 Q250 200 150 450 T50 950" 
+          d="M50 100 Q350 280 200 500 T150 850" 
           stroke="hsl(var(--primary))" 
-          strokeWidth="1"
+          strokeWidth="1.2"
           fill="none"
+          opacity="0.3"
+        />
+        <path 
+          d="M-200 200 Q100 400 50 600 T-100 900" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="1.8"
+          fill="none"
+          opacity="0.25"
         />
       </svg>
 
       {/* Elegant curvy lines - Right side */}
       <svg 
-        className="absolute right-0 top-0 h-full w-1/3 opacity-100 pointer-events-none"
-        viewBox="0 0 400 1000"
+        className="absolute right-0 top-0 h-full w-2/5 pointer-events-none"
+        viewBox="0 0 500 1000"
         preserveAspectRatio="xMaxYMid slice"
         fill="none"
       >
         <path 
-          d="M500 0 Q250 250 350 500 T450 1000" 
+          d="M650 0 Q300 200 400 400 T600 800 Q450 900 550 1000" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="2.5"
+          fill="none"
+          opacity="0.7"
+        />
+        <path 
+          d="M580 50 Q250 300 380 550 T530 950" 
           stroke="hsl(var(--primary))" 
           strokeWidth="2"
           fill="none"
+          opacity="0.5"
         />
         <path 
-          d="M450 100 Q200 350 300 600 T400 1100" 
+          d="M500 -100 Q200 150 320 380 T420 700 Q300 850 400 1000" 
           stroke="hsl(var(--primary))" 
           strokeWidth="1.5"
           fill="none"
+          opacity="0.4"
         />
         <path 
-          d="M400 -50 Q150 200 250 450 T350 950" 
+          d="M450 100 Q150 280 300 500 T350 850" 
           stroke="hsl(var(--primary))" 
-          strokeWidth="1"
+          strokeWidth="1.2"
           fill="none"
+          opacity="0.3"
+        />
+        <path 
+          d="M700 200 Q400 400 450 600 T600 900" 
+          stroke="hsl(var(--primary))" 
+          strokeWidth="1.8"
+          fill="none"
+          opacity="0.25"
         />
       </svg>
 
