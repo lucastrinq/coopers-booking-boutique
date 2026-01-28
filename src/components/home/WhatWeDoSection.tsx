@@ -9,7 +9,7 @@ const services = [{
   description: "From first local shows to festival stages, we craft a live presence that builds momentum thoughtfully."
 }, {
   title: "Artist Support",
-  description: "Beyond bookings — guidance, advocacy, and genuine partnership in navigating the music industry."
+  description: "Beyond bookings, we guide, advocate, and advice in navigating the current music industry."
 }];
 
 const WhatWeDoSection = () => {
